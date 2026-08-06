@@ -18,7 +18,7 @@ backend:
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
-site_url: https://cronicasdegaleras.com
+site_url: https://cronicasdegaleras.netlify.app
 show_preview_links: true
 
 collections:

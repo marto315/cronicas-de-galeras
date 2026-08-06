@@ -5,6 +5,7 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  NEXT_PUBLIC_SITE_URL = "https://cronicasdegaleras.netlify.app"
 
 # Reescrituras para que funcionen /feed.xml, /admin y /config.yml en el sitio estático
 [[redirects]]
