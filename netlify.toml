@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "out"
+  framework = "none"
 
 [build.environment]
   NODE_VERSION = "22"
