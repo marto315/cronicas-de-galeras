@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Crónicas de Galeras — memoria del pueblo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3c2f22"/>
+      <stop offset="1" stop-color="#5b4632"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1080" height="510" fill="none" stroke="#e6d9bd" stroke-width="3" rx="8"/>
+  <text x="600" y="240" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" fill="#f7f0dd">Crónicas de</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="120" fill="#d9824a" font-style="italic">Galeras</text>
+  <text x="600" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#e6d9bd">Historias, mitos y memoria · Sucre, Colombia</text>
+  <line x1="300" y1="500" x2="900" y2="500" stroke="#d9824a" stroke-width="2"/>
+</svg>

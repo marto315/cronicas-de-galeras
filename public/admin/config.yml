@@ -1,0 +1,55 @@
+# Panel de administración de Crónicas de Galeras (Decap CMS)
+#
+# Opción recomendada (más fácil para editores): alojar el sitio en Netlify,
+# activar "Identity" y "Git Gateway", e invitar a los editores por correo.
+#
+# Alternativa con GitHub directo (descomentar y configurar):
+# backend:
+#   name: github
+#   repo: TU_USUARIO/TU_REPOSITORIO
+#   branch: main
+#   base_url: https://api.netlify.com/auth
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Las imágenes subidas se guardan en public/images/uploads y se sirven en /images/uploads
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://cronicasdegaleras.com
+show_preview_links: true
+
+collections:
+  - name: "posts"
+    label: "Crónicas"
+    label_singular: "Crónica"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    preview_path: "blog/{{slug}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Título", name: "title", widget: "string", hint: "Ej: La iglesia de Galeras y su historia" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - label: "Categoría"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Historia", value: "historia" }
+          - { label: "Mitos y Leyendas", value: "mitos-y-leyendas" }
+          - { label: "Personajes", value: "personajes" }
+          - { label: "Religión y Fe", value: "religion-y-fe" }
+          - { label: "Cultura y Folclor", value: "cultura-y-folclor" }
+          - { label: "Festival", value: "festival" }
+          - { label: "Nuestra Identidad", value: "nuestra-identidad" }
+          - { label: "Actualidad", value: "actualidad" }
+      - { label: "Descripción breve (para buscadores)", name: "excerpt", widget: "text", hint: "2 a 3 frases que resuman la crónica" }
+      - { label: "Imagen de portada", name: "cover", widget: "image", required: false, hint: "Sube una foto del pueblo, la iglesia o el parque" }
+      - { label: "Autor / Autora", name: "author", widget: "string", default: "Crónicas de Galeras" }
+      - { label: "Etiquetas", name: "tags", widget: "list", default: ["galeras"] }
+      - { label: "Crónica destacada", name: "featured", widget: "boolean", default: false, hint: "Aparece en el inicio del sitio" }
+      - { label: "Contenido", name: "body", widget: "markdown", hint: "Escribe aquí la crónica completa" }

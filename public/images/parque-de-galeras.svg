@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Silueta del parque principal de Galeras">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3d7"/>
+      <stop offset="1" stop-color="#f0dfb8"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d8a4b"/>
+      <stop offset="1" stop-color="#5c6b36"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <circle cx="230" cy="170" r="80" fill="#f7f0dd" opacity="0.9"/>
+  <rect width="1200" height="170" y="460" fill="url(#grass)"/>
+  <!-- trees -->
+  <g fill="#5c6b36">
+    <path d="M160 460 C150 380 130 340 90 330 C150 300 170 250 160 200 C200 250 230 280 260 320 C290 330 300 360 290 460 Z"/>
+    <path d="M760 460 C740 370 720 330 670 315 C730 285 755 235 745 185 C790 240 825 275 865 320 C900 335 905 370 895 460 Z"/>
+  </g>
+  <g fill="#4f5e2e">
+    <rect x="86" y="205" width="10" height="255"/><rect x="735" y="195" width="10" height="265"/>
+  </g>
+  <!-- church in background -->
+  <g opacity="0.55" fill="#a14e2c">
+    <rect x="520" y="220" width="30" height="240"/>
+    <path d="M505 300 L535 180 L565 300 Z"/>
+    <rect x="470" y="300" width="130" height="160"/>
+    <path d="M445 300 L535 210 L625 300 Z"/>
+  </g>
+  <!-- bench -->
+  <g fill="#8a4a2b">
+    <rect x="980" y="400" width="160" height="12" rx="6"/>
+    <rect x="980" y="360" width="160" height="12" rx="6"/>
+    <rect x="990" y="412" width="10" height="48"/><rect x="1120" y="412" width="10" height="48"/>
+  </g>
+  <g fill="#6b4a2f">
+    <rect x="990" y="428" width="26" height="6" rx="3"/><rect x="1104" y="428" width="26" height="6" rx="3"/>
+  </g>
+  <!-- path -->
+  <path d="M600 460 L600 360 L660 330 L720 360 L720 460 Z" fill="#e2cfa4" opacity="0.9"/>
+  <!-- lamp -->
+  <g stroke="#6b4a2f" stroke-width="6" fill="none">
+    <path d="M300 460 L300 380"/>
+  </g>
+  <path d="M278 380 L322 380 L322 360 L278 360 Z" fill="#f7e7b4"/>
+  <g fill="#6b4a2f"><rect x="272" y="352" width="56" height="8" rx="3"/></g>
+</svg>
