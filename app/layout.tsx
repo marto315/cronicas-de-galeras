@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Lora } from "next/font/google";
 import Script from "next/script";
 import { Header, Footer } from "@/components/layout";
+import NetlifyIdentity from "@/components/NetlifyIdentity";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -104,6 +105,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <NetlifyIdentity />
         {siteConfig.adsense.enabled && (
           <Script
             id="adsense"
