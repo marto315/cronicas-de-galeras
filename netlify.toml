@@ -1,9 +1,27 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "22"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# Reescrituras para que funcionen /feed.xml, /admin y /config.yml en el sitio estático
+[[redirects]]
+  from = "/feed.xml"
+  to = "/rss"
+  status = 200
+
+[[redirects]]
+  from = "/config.yml"
+  to = "/admin/config.yml"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 200

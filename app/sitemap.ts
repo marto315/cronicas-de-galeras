@@ -3,6 +3,8 @@ import { CATEGORIES } from "@/lib/categories";
 import { getAllPosts } from "@/lib/posts";
 import { siteConfig } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = siteConfig.url.replace(/\/$/, "");
 
